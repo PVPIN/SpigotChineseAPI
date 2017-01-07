@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0068)https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html -->
+<html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+
+<title>WorldBorder（Spigot-API 1.11.2-R0.1-SNAPSHOT API）</title>
+<meta name="date" content="2017-01-05">
+<link rel="stylesheet" type="text/css" href="./WorldBorder_files/stylesheet.css" title="样式">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./WorldBorder_files/translateelement.css"></head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="WorldBorder (Spigot-API 1.11.2-R0.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+&lt;div&gt;JavaScript is disabled on your browser.&lt;/div&gt;
+</noscript>
+ 
+<div class="topNav"><a name="navbar_top">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#skip-navbar_top" title="跳过导航链接"></a><a name="navbar_top_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/overview-summary.htm"><font><font>概览</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/bukkit/org.bukkit/org.bukkit.htm"><font><font>程序包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/package-use.htm"><font><font>使用</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/package-tree.htm"><font><font>树</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/deprecated-list.htm"><font><font>已过时</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/index-all.htm"><font><font>索引</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/help-doc.htm"><font><font>帮助</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.Spigot.html" title="org.bukkit中的类"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index.html?org/bukkit/WorldBorder.html" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><font><font>嵌套|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+ 
+</a></div>
+ 
+ 
+<div class="header">
+<div class="subTitle"><font><font>org.bukkit</font></font></div>
+<h2 title="接口WorldBorder" class="title"><font><font>接口WorldBorder</font></font></h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><font><font>公共接口</font></font><span class="strong"><font><font>WorldBorder</font></font></span></pre>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+ 
+</a>
+<h3><font><font>方法摘要</font></font></h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span><font><font>方法</font></font></span><span class="tabEnd">&nbsp;</span></caption>
+<tbody><tr>
+<th class="colFirst" scope="col"><font><font>修饰符和类型</font></font></th>
+<th class="colLast" scope="col"><font><font>方法和说明</font></font></th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html" title="class in org.bukkit">Location</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#getCenter()">getCenter</a></strong>()</code>
+<div class="block"><font><font>获取当前边框中心。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#getDamageAmount()">getDamageAmount</a></strong>()</code>
+<div class="block"><font><font>获取当前边界伤害量。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#getDamageBuffer()">getDamageBuffer</a></strong>()</code>
+<div class="block"><font><font>获取当前边框损坏缓冲区。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#getSize()">getSize</a></strong>()</code>
+<div class="block"><font><font>获取边框的当前边长。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#getWarningDistance()">getWarningDistance</a></strong>()</code>
+<div class="block"><font><font>获取当前边界警告距离。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#getWarningTime()">getWarningTime</a></strong>()</code>
+<div class="block"><font><font>获取当前边界警告时间（以秒为单位）。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#reset()">reset</a></strong>()</code>
+<div class="block"><font><font>将边框重置为默认值。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#setCenter(double,%20double)">setCenter</a></strong>(double&nbsp;x,
+double&nbsp;z)</code>
+<div class="block"><font><font>设置新的边框中心。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#setCenter(org.bukkit.Location)">setCenter</a></strong>(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location)</code>
+<div class="block"><font><font>设置新的边框中心。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#setDamageAmount(double)">setDamageAmount</a></strong>(double&nbsp;damage)</code>
+<div class="block"><font><font>设置玩家在边框外加边框缓冲区时所遭受的伤害量。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#setDamageBuffer(double)">setDamageBuffer</a></strong>(double&nbsp;blocks)</code>
+<div class="block"><font><font>设置玩家在受到伤害之前可以安全地在边界以外的块的数量。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#setSize(double)">setSize</a></strong>(double&nbsp;newSize)</code>
+<div class="block"><font><font>将边框设置为以块为单位指定边长的正方形区域。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#setSize(double,%20long)">setSize</a></strong>(double&nbsp;newSize,
+long&nbsp;seconds)</code>
+<div class="block"><font><font>将边框设置为以块为单位指定边长的正方形区域。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#setWarningDistance(int)">setWarningDistance</a></strong>(int&nbsp;distance)</code>
+<div class="block"><font><font>设置当播放器在距边界指定的块数内时屏幕变为红色的警告距离。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#setWarningTime(int)">setWarningTime</a></strong>(int&nbsp;seconds)</code>
+<div class="block"><font><font>设置当收缩边界在指定时间内到达播放器时导致屏幕变为红色的警告时间。</font></font></div>
+</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+ 
+</a>
+<h3><font><font>方法详细信息</font></font></h3>
+<a name="reset()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>重启</font></font></h4>
+<pre><font><font>void reset（）</font></font></pre>
+<div class="block"><font><font>将边框重置为默认值。</font></font></div>
+</li>
+</ul>
+<a name="getSize()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getSize</font></font></h4>
+<pre><font><font>double getSize（）</font></font></pre>
+<div class="block"><font><font>获取边框的当前边长。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>边框的当前边长。</font></font></dd></dl>
+</li>
+</ul>
+<a name="setSize(double)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setSize</font></font></h4>
+<pre><font><font>void setSize（double newSize）</font></font></pre>
+<div class="block"><font><font>将边框设置为以块为单位指定边长的正方形区域。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>newSize</code><font><font>  - 边框的新尺寸。</font></font></dd></dl>
+</li>
+</ul>
+<a name="setSize(double, long)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setSize</font></font></h4>
+<pre><font><font>void setSize（double newSize，</font></font><font></font><font><font>
+           长秒）</font></font></pre>
+<div class="block"><font><font>将边框设置为以块为单位指定边长的正方形区域。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>newSize</code><font><font>  - 边框的新边长度。</font></font></dd><dd><code>seconds</code><font><font>  - 边框从上一个大小增加或缩小到设置的时间（以秒为单位）。</font></font></dd></dl>
+</li>
+</ul>
+<a name="getCenter()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getCenter</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html" title="org.bukkit中的类"><font><font>位置</font></font></a><font><font> &nbsp;getCenter（）</font></font></pre>
+<div class="block"><font><font>获取当前边框中心。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>当前边框中心。</font></font></dd></dl>
+</li>
+</ul>
+<a name="setCenter(double, double)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setCenter</font></font></h4>
+<pre><font><font>void setCenter（double x，</font></font><font></font><font><font>
+             双z）</font></font></pre>
+<div class="block"><font><font>设置新的边框中心。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>x</code><font><font>  - 新的中心x坐标。</font></font></dd><dd><code>z</code><font><font>  - 新的中心z坐标。</font></font></dd></dl>
+</li>
+</ul>
+<a name="setCenter(org.bukkit.Location)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setCenter</font></font></h4>
+<pre><font><font>无效setCenter（</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html" title="org.bukkit中的类"><font><font>位置</font></font></a><font><font> &nbsp;定位）</font></font></pre>
+<div class="block"><font><font>设置新的边框中心。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>location</code><font><font> - 边界中心的新位置。</font><font>（仅使用x / z）</font></font></dd></dl>
+</li>
+</ul>
+<a name="getDamageBuffer()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getDamageBuffer</font></font></h4>
+<pre><font><font>double getDamageBuffer（）</font></font></pre>
+<div class="block"><font><font>获取当前边框损坏缓冲区。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>当前边界损坏缓冲区。</font></font></dd></dl>
+</li>
+</ul>
+<a name="setDamageBuffer(double)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setDamageBuffer</font></font></h4>
+<pre><font><font>void setDamageBuffer（double blocks）</font></font></pre>
+<div class="block"><font><font>设置玩家在受到伤害之前可以安全地在边界以外的块的数量。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>blocks</code><font><font> - 块的数量。</font><font>（默认为5个块。）</font></font></dd></dl>
+</li>
+</ul>
+<a name="getDamageAmount()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getDamageAmount</font></font></h4>
+<pre><font><font>double getDamageAmount（）</font></font></pre>
+<div class="block"><font><font>获取当前边界伤害量。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>当前边界伤害量。</font></font></dd></dl>
+</li>
+</ul>
+<a name="setDamageAmount(double)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setDamageAmount</font></font></h4>
+<pre><font><font>void setDamageAmount（double damage）</font></font></pre>
+<div class="block"><font><font>设置玩家在边框外加边框缓冲区时所遭受的伤害量。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>damage</code><font><font> - 损坏的金额。</font><font>（默认值为每个块每秒0.2次伤害。）</font></font></dd></dl>
+</li>
+</ul>
+<a name="getWarningTime()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getWarningTime</font></font></h4>
+<pre><font><font>int getWarningTime（）</font></font></pre>
+<div class="block"><font><font>获取当前边界警告时间（以秒为单位）。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>当前边界警告时间（以秒为单位）。</font></font></dd></dl>
+</li>
+</ul>
+<a name="setWarningTime(int)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setWarningTime</font></font></h4>
+<pre><font><font>void setWarningTime（int seconds）</font></font></pre>
+<div class="block"><font><font>设置当收缩边界在指定时间内到达播放器时导致屏幕变为红色的警告时间。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>seconds</code><font><font> - 时间量（以秒为单位）。</font><font>（默认为15秒。）</font></font></dd></dl>
+</li>
+</ul>
+<a name="getWarningDistance()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getWarningDistance</font></font></h4>
+<pre><font><font>int getWarningDistance（）</font></font></pre>
+<div class="block"><font><font>获取当前边界警告距离。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>当前边界警告距离。</font></font></dd></dl>
+</li>
+</ul>
+<a name="setWarningDistance(int)">
+ 
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4><font><font>setWarningDistance</font></font></h4>
+<pre><font><font>void setWarningDistance（int distance）</font></font></pre>
+<div class="block"><font><font>设置当播放器在距边界指定的块数内时屏幕变为红色的警告距离。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>distance</code><font><font> - 以块为单位的距离。</font><font>（默认为5个块。）</font></font></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+ 
+ 
+<div class="bottomNav"><a name="navbar_bottom">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#skip-navbar_bottom" title="跳过导航链接"></a><a name="navbar_bottom_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/overview-summary.html"><font><font>概述</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/package-summary.html"><font><font>包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/class-use/WorldBorder.html"><font><font>使用</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/package-tree.html"><font><font>树</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/deprecated-list.html"><font><font>已弃用</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index-all.html"><font><font>指数</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/help-doc.html"><font><font>帮帮我</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.Spigot.html" title="org.bukkit中的类"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index.html?org/bukkit/WorldBorder.html" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom" style="display: block;">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><font><font>嵌套|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+ 
+</a></div>
+ 
+<p class="legalCopy"><small><font><font>版权所有©2017.保留所有权利。</font></font></small></p><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./WorldBorder_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

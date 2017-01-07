@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0069)https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html -->
+<html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+
+<title>WorldCreator（Spigot-API 1.11.2-R0.1-SNAPSHOT API）</title>
+<meta name="date" content="2017-01-05">
+<link rel="stylesheet" type="text/css" href="./WorldCreator_files/stylesheet.css" title="样式">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./WorldCreator_files/translateelement.css"></head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="WorldCreator (Spigot-API 1.11.2-R0.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+&lt;div&gt;JavaScript is disabled on your browser.&lt;/div&gt;
+</noscript>
+ 
+<div class="topNav"><a name="navbar_top">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#skip-navbar_top" title="跳过导航链接"></a><a name="navbar_top_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/overview-summary.htm"><font><font>概览</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/bukkit/org.bukkit/org.bukkit.htm"><font><font>程序包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/package-use.htm"><font><font>使用</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/package-tree.htm"><font><font>树</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/deprecated-list.htm"><font><font>已过时</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/index-all.htm"><font><font>索引</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/help-doc.htm"><font><font>帮助</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html" title="接口在org.bukkit"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldType.html" title="枚举在org.bukkit"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index.html?org/bukkit/WorldCreator.html" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><font><font>嵌套|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#constructor_summary"><font><font>构造方法</font></font></a><font><font> &nbsp;|&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#constructor_detail"><font><font>构造方法</font></font></a><font><font> &nbsp;|&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+ 
+</a></div>
+ 
+ 
+<div class="header">
+<div class="subTitle"><font><font>org.bukkit</font></font></div>
+<h2 title="WorldCreator类" class="title"><font><font>WorldCreator类</font></font></h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="类或接口"><font><font>java.lang.Object</font></font></a></li>
+<li>
+<ul class="inheritance">
+<li><font><font>org.bukkit.WorldCreator</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><font><font>公共类</font></font><span class="strong"><font><font>WorldCreator</font></font></span><font><font> 
+扩展</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="类或接口"><font><font>对象</font></font></a></pre>
+<div class="block"><font><font>表示可用于创建世界的各种类型的选项。</font></font></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+ 
+</a>
+<h3><font><font>构造函数摘要</font></font></h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span><font><font>构造函数</font></font></span><span class="tabEnd">&nbsp;</span></caption>
+<tbody><tr>
+<th class="colOne" scope="col"><font><font>构造函数和说明</font></font></th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#WorldCreator(java.lang.String)">WorldCreator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block"><font><font>为给定的世界名称创建一个空的WorldCreationOptions</font></font></div>
+</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+ 
+</a>
+<h3><font><font>方法摘要</font></font></h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span><font><font>方法</font></font></span><span class="tabEnd">&nbsp;</span></caption>
+<tbody><tr>
+<th class="colFirst" scope="col"><font><font>修饰符和类型</font></font></th>
+<th class="colLast" scope="col"><font><font>方法和说明</font></font></th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#copy(org.bukkit.World)">copy</a></strong>(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.html" title="interface in org.bukkit">World</a>&nbsp;world)</code>
+<div class="block"><font><font>从指定的世界复制选项</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#copy(org.bukkit.WorldCreator)">copy</a></strong>(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a>&nbsp;creator)</code>
+<div class="block"><font><font>从指定的选项复制选项 </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><code>WorldCreator</code></a></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.html" title="interface in org.bukkit">World</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#createWorld()">createWorld</a></strong>()</code>
+<div class="block"><font><font>创建具有指定选项的世界。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.Environment.html" title="enum in org.bukkit">World.Environment</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#environment()">environment</a></strong>()</code>
+<div class="block"><font><font>获取将用于创建或加载世界的环境</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#environment(org.bukkit.World.Environment)">environment</a></strong>(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.Environment.html" title="enum in org.bukkit">World.Environment</a>&nbsp;env)</code>
+<div class="block"><font><font>设置将用于创建或加载世界的环境</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#generateStructures()">generateStructures</a></strong>()</code>
+<div class="block"><font><font>获取结构是否将在世界中生成。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#generateStructures(boolean)">generateStructures</a></strong>(boolean&nbsp;generate)</code>
+<div class="block"><font><font>设置是否创建或加载此创建者的世界将具有结构。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/generator/ChunkGenerator.html" title="class in org.bukkit.generator">ChunkGenerator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#generator()">generator</a></strong>()</code>
+<div class="block"><font><font>获取将用于创建或加载世界的生成器。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#generator(org.bukkit.generator.ChunkGenerator)">generator</a></strong>(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/generator/ChunkGenerator.html" title="class in org.bukkit.generator">ChunkGenerator</a>&nbsp;generator)</code>
+<div class="block"><font><font>设置将用于创建或加载世界的生成器。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#generator(java.lang.String)">generator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;generator)</code>
+<div class="block"><font><font>设置将用于创建或加载世界的生成器。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#generator(java.lang.String,%20org.bukkit.command.CommandSender)">generator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;generator,
+<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&nbsp;output)</code>
+<div class="block"><font><font>设置将用于创建或加载世界的生成器。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#generatorSettings()">generatorSettings</a></strong>()</code>
+<div class="block"><font><font>获取将创建或加载的世界的生成器设置</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#generatorSettings(java.lang.String)">generatorSettings</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;generatorSettings)</code>
+<div class="block"><font><font>设置将创建或加载的世界的发生器设置</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/generator/ChunkGenerator.html" title="class in org.bukkit.generator">ChunkGenerator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#getGeneratorForName(java.lang.String,%20java.lang.String,%20org.bukkit.command.CommandSender)">getGeneratorForName</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;world,
+<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&nbsp;output)</code>
+<div class="block"><font><font>尝试获取</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/generator/ChunkGenerator.html" title="org.bukkit.generator中的类"><code>ChunkGenerator</code></a><font><font>给定名称。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#name()">name</a></strong>()</code>
+<div class="block"><font><font>获取要加载或创建的世界的名称。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#name(java.lang.String)">name</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block"><font><font>创建一个新</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><code>WorldCreator</code></a><font><font>的世界给出名字</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#seed()">seed</a></strong>()</code>
+<div class="block"><font><font>获取将用于创建这个世界的种子</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#seed(long)">seed</a></strong>(long&nbsp;seed)</code>
+<div class="block"><font><font>设置将用于创建此世界的种子</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldType.html" title="enum in org.bukkit">WorldType</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#type()">type</a></strong>()</code>
+<div class="block"><font><font>获取将要创建或加载的世界的类型</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#type(org.bukkit.WorldType)">type</a></strong>(<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldType.html" title="enum in org.bukkit">WorldType</a>&nbsp;type)</code>
+<div class="block"><font><font>设置将要创建或加载的世界的类型</font></font></div>
+</td>
+</tr>
+</tbody></table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+ 
+</a>
+<h3><font><font>从类java.lang继承的方法。</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="类或接口"><font><font>目的</font></font></a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+ 
+</a>
+<h3><font><font>构造函数详细信息</font></font></h3>
+<a name="WorldCreator(java.lang.String)">
+ 
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4><font><font>WorldCreator</font></font></h4>
+<pre><font><font>公共WorldCreator（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;名称）</font></font></pre>
+<div class="block"><font><font>为给定的世界名称创建一个空的WorldCreationOptions</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>name</code><font><font>  - 将创建的世界的名称</font></font></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+ 
+</a>
+<h3><font><font>方法详细信息</font></font></h3>
+<a name="copy(org.bukkit.World)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>复制</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;复印件（</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.html" title="接口在org.bukkit"><font><font>世界</font></font></a><font><font> &nbsp;世界）</font></font></pre>
+<div class="block"><font><font>从指定的世界复制选项</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>world</code><font><font>  - 世界复制选项</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="copy(org.bukkit.WorldCreator)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>复制</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;复印件（</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;创建者）</font></font></pre>
+<div class="block"><font><font>从指定的选项复制选项 </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><code>WorldCreator</code></a></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>creator</code><font><font>  - 世界创建者从中复制选项</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="name()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>名称</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;名称（）</font></font></pre>
+<div class="block"><font><font>获取要加载或创建的世界的名称。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>世界名称</font></font></dd></dl>
+</li>
+</ul>
+<a name="seed()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>种子</font></font></h4>
+<pre><font><font>public long seed（）</font></font></pre>
+<div class="block"><font><font>获取将用于创建这个世界的种子</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>世界种子</font></font></dd></dl>
+</li>
+</ul>
+<a name="seed(long)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>种子</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;种子（种子长）</font></font></pre>
+<div class="block"><font><font>设置将用于创建此世界的种子</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>seed</code><font><font>  - 世界种子</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="environment()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>环境</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.Environment.html" title="枚举在org.bukkit"><font><font>World.Environment</font></font></a><font><font> &nbsp;环境（）</font></font></pre>
+<div class="block"><font><font>获取将用于创建或加载世界的环境</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>世界环境</font></font></dd></dl>
+</li>
+</ul>
+<a name="environment(org.bukkit.World.Environment)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>环境</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;环境（</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.Environment.html" title="枚举在org.bukkit"><font><font>World.Environment</font></font></a><font><font> &nbsp;ENV）</font></font></pre>
+<div class="block"><font><font>设置将用于创建或加载世界的环境</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>env</code><font><font>  - 世界环境</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="type()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>类型</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldType.html" title="枚举在org.bukkit"><font><font>WorldType</font></font></a><font><font> &nbsp;类型（）</font></font></pre>
+<div class="block"><font><font>获取将要创建或加载的世界的类型</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>世界类型</font></font></dd></dl>
+</li>
+</ul>
+<a name="type(org.bukkit.WorldType)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>类型</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;类型（</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldType.html" title="枚举在org.bukkit"><font><font>WorldType</font></font></a><font><font> &nbsp;型）</font></font></pre>
+<div class="block"><font><font>设置将要创建或加载的世界的类型</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>type</code><font><font>  - 世界类型</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="generator()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>发电机</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/generator/ChunkGenerator.html" title="org.bukkit.generator中的类"><font><font>ChunkGenerator</font></font></a><font><font> &nbsp;发生器（）</font></font></pre>
+<div class="block"><font><font>获取将用于创建或加载世界的生成器。
+</font></font><p><font><font>
+这可能为null，在这种情况下将使用此环境的“自然”生成器。</font></font></p></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>块发生器</font></font></dd></dl>
+</li>
+</ul>
+<a name="generator(org.bukkit.generator.ChunkGenerator)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>发电机</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;发生器（</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/generator/ChunkGenerator.html" title="org.bukkit.generator中的类"><font><font>ChunkGenerator</font></font></a><font><font> &nbsp;发电机）</font></font></pre>
+<div class="block"><font><font>设置将用于创建或加载世界的生成器。
+</font></font><p><font><font>
+这可能为null，在这种情况下将使用此环境的“自然”生成器。</font></font></p></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>generator</code><font><font>  - 块发生器</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="generator(java.lang.String)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>发电机</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;发生器（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;发电机）</font></font></pre>
+<div class="block"><font><font>设置将用于创建或加载世界的生成器。
+</font></font><p><font><font>
+这可能为null，在这种情况下，将使用此环境的“自然”生成器。
+</font></font></p><p><font><font>
+如果找不到给定名称的发电机，则将使用自然环境发电机，并向控制台打印警告。</font></font></p></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>generator</code><font><font>  - 要使用的生成器的名称，以“plugin：id”表示法</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="generator(java.lang.String, org.bukkit.command.CommandSender)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>发电机</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;发生器（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;发电机，
+                      </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/command/CommandSender.html" title="接口在org.bukkit.command"><font><font>CommandSender</font></font></a><font><font> &nbsp;输出）</font></font></pre>
+<div class="block"><font><font>设置将用于创建或加载世界的生成器。
+</font></font><p><font><font>
+这可能为null，在这种情况下，将使用此环境的“自然”生成器。
+</font></font></p><p><font><font>
+如果找不到给定名称的发电机，则将使用自然环境发电机，并将警告打印到指定的输出</font></font></p></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>generator</code><font><font>  - 要使用的生成器的名称，以“plugin：id”表示法</font></font></dd><dd><code>output</code><font><font>- </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/command/CommandSender.html" title="接口在org.bukkit.command"><code>CommandSender</code></a><font><font>将收到任何错误信息</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="generatorSettings(java.lang.String)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>generatorSettings</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;generatorSettings（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;generatorSettings）</font></font></pre>
+<div class="block"><font><font>设置将创建或加载的世界的发生器设置</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>generatorSettings</code><font><font>  - 发生器应使用的设置</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="generatorSettings()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>generatorSettings</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;generatorSettings（）</font></font></pre>
+<div class="block"><font><font>获取将创建或加载的世界的生成器设置</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>生成器应使用的设置</font></font></dd></dl>
+</li>
+</ul>
+<a name="generateStructures(boolean)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>generateStructures</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;generateStructures（布尔生成）</font></font></pre>
+<div class="block"><font><font>设置是否创建或加载此创建者的世界将具有结构。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>generate</code><font><font>  - 是否生成结构</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>这个对象，用于链接</font></font></dd></dl>
+</li>
+</ul>
+<a name="generateStructures()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>generateStructures</font></font></h4>
+<pre><font><font>public boolean generateStructures（）</font></font></pre>
+<div class="block"><font><font>获取结构是否将在世界中生成。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>如果将生成结构，则为True</font></font></dd></dl>
+</li>
+</ul>
+<a name="createWorld()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>createWorld</font></font></h4>
+<pre><font><font>公共&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.html" title="接口在org.bukkit"><font><font>世界</font></font></a><font><font> &nbsp;createWorld（）</font></font></pre>
+<div class="block"><font><font>创建具有指定选项的世界。
+</font></font><p><font><font>
+如果世界已经存在，它将从磁盘加载，一些选项可能会被忽略。</font></font></p></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>新创造或加载的世界</font></font></dd></dl>
+</li>
+</ul>
+<a name="name(java.lang.String)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>名称</font></font></h4>
+<pre><font><font>公共静态&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><font><font>WorldCreator</font></font></a><font><font> &nbsp;名（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;名称）</font></font></pre>
+<div class="block"><font><font>创建一个新</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" title="org.bukkit中的类"><code>WorldCreator</code></a><font><font>的世界给出名字</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>name</code><font><font>  - 要加载或创建的世界的名称</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>生成的WorldCreator</font></font></dd></dl>
+</li>
+</ul>
+<a name="getGeneratorForName(java.lang.String, java.lang.String, org.bukkit.command.CommandSender)">
+ 
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4><font><font>getGeneratorForName</font></font></h4>
+<pre><font><font>公共静态&nbsp; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/generator/ChunkGenerator.html" title="org.bukkit.generator中的类"><font><font>ChunkGenerator</font></font></a><font><font> &nbsp;getGeneratorForName（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;世界
+                                  </font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;名称，
+                                  </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/command/CommandSender.html" title="接口在org.bukkit.command"><font><font>CommandSender</font></font></a><font><font> &nbsp;输出）</font></font></pre>
+<div class="block"><font><font>尝试获取</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/generator/ChunkGenerator.html" title="org.bukkit.generator中的类"><code>ChunkGenerator</code></a><font><font>给定名称。
+</font></font><p><font><font>
+如果没有发现，发电机，将返回null和消息将被打印到指定的</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/command/CommandSender.html" title="接口在org.bukkit.command"><code>CommandSender</code></a><font><font>解释为什么。
+</font></font></p><p><font><font>
+名称必须在“plugin：id”符号中，或者可选地只是“plugin”，其中“plugin”是插件的安全名称，“id”是您希望请求的插件的可选唯一标识符插入。</font></font></p></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>world</code><font><font>  - 这将被使用的世界的名称</font></font></dd><dd><code>name</code><font><font>  - 要检索的生成器的名称</font></font></dd><dd><code>output</code><font><font>  - 如果出现错误，在哪里输出</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>结果生成器，或null</font></font></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+ 
+ 
+<div class="bottomNav"><a name="navbar_bottom">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#skip-navbar_bottom" title="跳过导航链接"></a><a name="navbar_bottom_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/overview-summary.html"><font><font>概述</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/package-summary.html"><font><font>包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/class-use/WorldCreator.html"><font><font>使用</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/package-tree.html"><font><font>树</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/deprecated-list.html"><font><font>已弃用</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index-all.html"><font><font>指数</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/help-doc.html"><font><font>帮帮我</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldBorder.html" title="接口在org.bukkit"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldType.html" title="枚举在org.bukkit"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index.html?org/bukkit/WorldCreator.html" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom" style="display: block;">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><font><font>嵌套|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#constructor_summary"><font><font>构造方法</font></font></a><font><font> &nbsp;|&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#constructor_detail"><font><font>构造方法</font></font></a><font><font> &nbsp;|&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/WorldCreator.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+ 
+</a></div>
+ 
+<p class="legalCopy"><small><font><font>版权所有©2017.保留所有权利。</font></font></small></p><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./WorldCreator_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

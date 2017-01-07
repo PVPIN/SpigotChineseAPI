@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0062)https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html -->
+<html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+
+<title>Chunk（Spigot-API 1.11.2-R0.1-SNAPSHOT API）</title>
+<meta name="date" content="2017-01-05">
+<link rel="stylesheet" type="text/css" href="./Chunk_files/stylesheet.css" title="样式">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Chunk_files/translateelement.css"></head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Chunk (Spigot-API 1.11.2-R0.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+&lt;div&gt;JavaScript is disabled on your browser.&lt;/div&gt;
+</noscript>
+ 
+<div class="topNav"><a name="navbar_top">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#skip-navbar_top" title="跳过导航链接"></a><a name="navbar_top_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/overview-summary.htm"><font><font>概览</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/bukkit/org.bukkit/org.bukkit.htm"><font><font>程序包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/package-use.htm"><font><font>使用</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/package-tree.htm"><font><font>树</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/deprecated-list.htm"><font><font>已过时</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/index-all.htm"><font><font>索引</font></font></a></li>
+<li><a href="file:///Users/HardyXiang/Documents/Aptana%20Studio%203%20Workspace/%E4%B8%AD%E6%96%87API/ChineseAPI/help-doc.htm"><font><font>帮助</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChatColor.html" title="枚举在org.bukkit"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChunkSnapshot.html" title="接口在org.bukkit"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index.html?org/bukkit/Chunk.html" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><font><font>嵌套|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+ 
+</a></div>
+ 
+ 
+<div class="header">
+<div class="subTitle"><font><font>org.bukkit</font></font></div>
+<h2 title="接口块" class="title"><font><font>接口块</font></font></h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><font><font>公共接口</font></font><span class="strong"><font><font>块</font></font></span></pre>
+<div class="block"><font><font>表示块的块</font></font></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+ 
+</a>
+<h3><font><font>方法摘要</font></font></h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span><font><font>方法</font></font></span><span class="tabEnd">&nbsp;</span></caption>
+<tbody><tr>
+<th class="colFirst" scope="col"><font><font>修饰符和类型</font></font></th>
+<th class="colLast" scope="col"><font><font>方法和说明</font></font></th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#getBlock(int,%20int,%20int)">getBlock</a></strong>(int&nbsp;x,
+int&nbsp;y,
+int&nbsp;z)</code>
+<div class="block"><font><font>从这个块中获取一个块</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChunkSnapshot.html" title="interface in org.bukkit">ChunkSnapshot</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#getChunkSnapshot()">getChunkSnapshot</a></strong>()</code>
+<div class="block"><font><font>捕获块数据的线程安全只读快照</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChunkSnapshot.html" title="interface in org.bukkit">ChunkSnapshot</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#getChunkSnapshot(boolean,%20boolean,%20boolean)">getChunkSnapshot</a></strong>(boolean&nbsp;includeMaxblocky,
+boolean&nbsp;includeBiome,
+boolean&nbsp;includeBiomeTempRain)</code>
+<div class="block"><font><font>捕获块数据的线程安全只读快照</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>[]</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#getEntities()">getEntities</a></strong>()</code>
+<div class="block"><font><font>获取块中的所有实体的列表。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockState.html" title="interface in org.bukkit.block">BlockState</a>[]</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#getTileEntities()">getTileEntities</a></strong>()</code>
+<div class="block"><font><font>获取块中所有图块实体的列表。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.html" title="interface in org.bukkit">World</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#getWorld()">getWorld</a></strong>()</code>
+<div class="block"><font><font>获取包含这个块的世界</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#getX()">getX</a></strong>()</code>
+<div class="block"><font><font>获取此块的X坐标</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#getZ()">getZ</a></strong>()</code>
+<div class="block"><font><font>获取此块的Z坐标</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#isLoaded()">isLoaded</a></strong>()</code>
+<div class="block"><font><font>检查块是否已加载。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#load()">load</a></strong>()</code>
+<div class="block"><font><font>加载块。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#load(boolean)">load</a></strong>(boolean&nbsp;generate)</code>
+<div class="block"><font><font>加载块。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#unload()">unload</a></strong>()</code>
+<div class="block"><font><font>卸载并选择性地保存Chunk</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#unload(boolean)">unload</a></strong>(boolean&nbsp;save)</code>
+<div class="block"><font><font>卸载并选择性地保存Chunk</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#unload(boolean,%20boolean)">unload</a></strong>(boolean&nbsp;save,
+boolean&nbsp;safe)</code>
+<div class="block"><strong><font><font>已弃用。</font></font></strong>&nbsp;
+<div class="block"><i><font><font>它永远不会安全删除使用中的块</font></font></i></div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+ 
+</a>
+<h3><font><font>方法详细信息</font></font></h3>
+<a name="getX()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getX</font></font></h4>
+<pre><font><font>int getX（）</font></font></pre>
+<div class="block"><font><font>获取此块的X坐标</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>X坐标</font></font></dd></dl>
+</li>
+</ul>
+<a name="getZ()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getZ</font></font></h4>
+<pre><font><font>int getZ（）</font></font></pre>
+<div class="block"><font><font>获取此块的Z坐标</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>Z坐标</font></font></dd></dl>
+</li>
+</ul>
+<a name="getWorld()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getWorld</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.html" title="接口在org.bukkit"><font><font>世界</font></font></a><font><font> &nbsp;getWorld（）</font></font></pre>
+<div class="block"><font><font>获取包含这个块的世界</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>父世界</font></font></dd></dl>
+</li>
+</ul>
+<a name="getBlock(int, int, int)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getBlock</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html" title="org.bukkit.block中的接口"><font><font>块</font></font></a><font><font> &nbsp;getBlock（INT X，</font></font><font></font><font><font>
+             int y，</font></font><font></font><font><font>
+             int z）</font></font></pre>
+<div class="block"><font><font>从这个块中获取一个块</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>x</code><font><font>  -  0-15</font></font></dd><dd><code>y</code><font><font>  -  0-127</font></font></dd><dd><code>z</code><font><font>  -  0-15</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>块</font></font></dd></dl>
+</li>
+</ul>
+<a name="getChunkSnapshot()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getChunkSnapshot</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChunkSnapshot.html" title="接口在org.bukkit"><font><font>ChunkSnapshot</font></font></a><font><font> &nbsp;getChunkSnapshot（）</font></font></pre>
+<div class="block"><font><font>捕获块数据的线程安全只读快照</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>ChunkSnapshot</font></font></dd></dl>
+</li>
+</ul>
+<a name="getChunkSnapshot(boolean, boolean, boolean)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getChunkSnapshot</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChunkSnapshot.html" title="接口在org.bukkit"><font><font>ChunkSnapshot</font></font></a><font><font> &nbsp;getChunkSnapshot（布尔includeMaxblocky，</font></font><font></font><font><font>
+                             boolean includeBiome，</font></font><font></font><font><font>
+                             boolean includeBiomeTempRain）</font></font></pre>
+<div class="block"><font><font>捕获块数据的线程安全只读快照</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>includeMaxblocky</code><font><font>  -   - 如果为true，快照包括每个坐标的最大Y值</font></font></dd><dd><code>includeBiome</code><font><font>  -   - 如果为true，快照包括每个坐标的生物群类型</font></font></dd><dd><code>includeBiomeTempRain</code><font><font>  -   - 如果为真，快照包括每坐标原始生物群体温度和降雨量</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>ChunkSnapshot</font></font></dd></dl>
+</li>
+</ul>
+<a name="getEntities()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getEntities</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html" title="接口在org.bukkit.entity"><font><font>实体</font></font></a><font><font> [] getEntities（）</font></font></pre>
+<div class="block"><font><font>获取块中的所有实体的列表。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>实体。</font></font></dd></dl>
+</li>
+</ul>
+<a name="getTileEntities()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getTileEntities</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockState.html" title="org.bukkit.block中的接口"><font><font>BlockState</font></font></a><font><font> [] getTileEntities（）</font></font></pre>
+<div class="block"><font><font>获取块中所有图块实体的列表。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>图块实体。</font></font></dd></dl>
+</li>
+</ul>
+<a name="isLoaded()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>isLoaded</font></font></h4>
+<pre><font><font>boolean isLoaded（）</font></font></pre>
+<div class="block"><font><font>检查块是否已加载。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>如果加载，则为true。</font></font></dd></dl>
+</li>
+</ul>
+<a name="load(boolean)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>加载</font></font></h4>
+<pre><font><font>boolean load（boolean generate）</font></font></pre>
+<div class="block"><font><font>加载块。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>generate</code><font><font>  - 是否生成一个块，如果它不存在</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>如果块已成功加载，则为true，否则为false</font></font></dd></dl>
+</li>
+</ul>
+<a name="load()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>加载</font></font></h4>
+<pre><font><font>boolean load（）</font></font></pre>
+<div class="block"><font><font>加载块。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>如果块已成功加载，则为true，否则为false</font></font></dd></dl>
+</li>
+</ul>
+<a name="unload(boolean, boolean)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>卸下</font></font></h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="类或接口"><font><font>@已淘汰</font></font></a><font></font><font><font>
+boolean unload（boolean save，</font></font><font></font><font><font>
+                        布尔安全）</font></font></pre>
+<div class="block"><span class="strong"><font><font>已弃用。</font></font></span>&nbsp;<i><font><font>它永远不会安全删除使用中的块</font></font></i></div>
+<div class="block"><font><font>卸载并选择性地保存Chunk</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>save</code><font><font>  - 控制是否保存块</font></font></dd><dd><code>safe</code><font><font>  - 控制当玩家在附近时是否卸载块</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>如果块已成功卸载，则为true，否则为false</font></font></dd></dl>
+</li>
+</ul>
+<a name="unload(boolean)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>卸下</font></font></h4>
+<pre><font><font>boolean unload（boolean save）</font></font></pre>
+<div class="block"><font><font>卸载并选择性地保存Chunk</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>save</code><font><font>  - 控制是否保存块</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>如果块已成功卸载，则为true，否则为false</font></font></dd></dl>
+</li>
+</ul>
+<a name="unload()">
+ 
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4><font><font>卸下</font></font></h4>
+<pre><font><font>boolean unload（）</font></font></pre>
+<div class="block"><font><font>卸载并选择性地保存Chunk</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>如果块已成功卸载，则为true，否则为false</font></font></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+ 
+ 
+<div class="bottomNav"><a name="navbar_bottom">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#skip-navbar_bottom" title="跳过导航链接"></a><a name="navbar_bottom_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/overview-summary.html"><font><font>概述</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/package-summary.html"><font><font>包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/class-use/Chunk.html"><font><font>使用</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/package-tree.html"><font><font>树</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/deprecated-list.html"><font><font>已弃用</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index-all.html"><font><font>指数</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/help-doc.html"><font><font>帮帮我</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChatColor.html" title="枚举在org.bukkit"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChunkSnapshot.html" title="接口在org.bukkit"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index.html?org/bukkit/Chunk.html" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom" style="display: block;">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><font><font>嵌套|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Chunk.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+ 
+</a></div>
+ 
+<p class="legalCopy"><small><font><font>版权所有©2017.保留所有权利。</font></font></small></p><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Chunk_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

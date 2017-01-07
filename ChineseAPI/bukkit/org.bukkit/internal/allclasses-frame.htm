@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0065)https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html -->
+<html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+
+<title>BanEntry（Spigot-API 1.11.2-R0.1-SNAPSHOT API）</title>
+<meta name="date" content="2017-01-05">
+<link rel="stylesheet" type="text/css" href="./allclasses-frame_files/stylesheet.css" title="样式">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./allclasses-frame_files/translateelement.css"></head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BanEntry (Spigot-API 1.11.2-R0.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+&lt;div&gt;JavaScript is disabled on your browser.&lt;/div&gt;
+</noscript>
+ 
+<div class="topNav"><a name="navbar_top">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html#skip-navbar_top" title="跳过导航链接"></a><a name="navbar_top_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="../../../overview-summary.htm"><font><font>概览</font></font></a></li>
+<li><a href="../../org.bukkit.htm"><font><font>程序包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="../../../package-use.htm"><font><font>使用</font></font></a></li>
+<li><a href="../../../package-tree.htm"><font><font>树</font></font></a></li>
+<li><a href="../../../deprecated-list.htm"><font><font>已过时</font></font></a></li>
+<li><a href="../../../index-all.htm"><font><font>索引</font></font></a></li>
+<li><a href="../../../help-doc.htm"><font><font>帮助</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="./Art.htm" title="枚举在org.bukkit"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="./BanList.htm" title="接口在org.bukkit"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="./BanEntry.htm" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="./BanEntry.htm" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+<li><a href="../../../allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><font><font>嵌套|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+ 
+</a></div>
+ 
+ 
+<div class="header">
+<div class="subTitle"><font><font>org.bukkit</font></font></div>
+<h2 title="接口BanEntry" class="title"><font><font>接口BanEntry</font></font></h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><font><font>公共接口</font></font><span class="strong"><font><font>BanEntry</font></font></span></pre>
+<div class="block"><font><font>禁止列表中的单个条目。</font><font>这可能代表玩家禁令或IP禁令。
+</font></font><p><font><font>
+禁止条目包括以下属性：
+</font></font></p><table border="1">
+<caption><font><font>属性信息</font></font></caption>
+<tbody><tr>
+<th><font><font>属性</font></font></th>
+<th><font><font>描述</font></font></th>
+</tr><tr>
+<td><font><font>目标名称/ IP地址</font></font></td>
+<td><font><font>目标名称或IP地址</font></font></td>
+</tr><tr>
+<td><font><font>创建日期</font></font></td>
+<td><font><font>禁令的创建日期</font></font></td>
+</tr><tr>
+<td><font><font>资源</font></font></td>
+<td><font><font>禁令的来源，如播放器，控制台，插件等</font></font></td>
+</tr><tr>
+<td><font><font>截止日期</font></font></td>
+<td><font><font>禁令的到期日期</font></font></td>
+</tr><tr>
+<td><font><font>原因</font></font></td>
+<td><font><font>禁止的原因</font></font></td>
+</tr>
+</tbody></table>
+<p><font><font>
+未保存的信息不会自动写入到实施的禁令名单上，相反，</font></font><a href="./BanEntry.htm#save()"><code>save()</code></a><font><font>必须调用方法写更改禁令名单。</font><font>如果这一禁令条目已过期（如从黑名单中删除），并在列表中不再发现，该</font></font><a href="./BanEntry.htm#save()"><code>save()</code></a><font><font>电话将它重新添加到列表中，因此禁止规定的受害者。
+</font></font></p><p><font><font>
+同样地，对相关的变化</font></font><a href="./BanList.htm" title="接口在org.bukkit"><code>BanList</code></a><font><font>或其他条目可以或可以不被反映在该条目。</font></font></p></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+ 
+</a>
+<h3><font><font>方法摘要</font></font></h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span><font><font>方法</font></font></span><span class="tabEnd">&nbsp;</span></caption>
+<tbody><tr>
+<th class="colFirst" scope="col"><font><font>修饰符和类型</font></font></th>
+<th class="colLast" scope="col"><font><font>方法和说明</font></font></th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html#getCreated()">getCreated</a></strong>()</code>
+<div class="block"><font><font>获取此禁止条目创建的日期。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html#getExpiration()">getExpiration</a></strong>()</code>
+<div class="block"><font><font>获取此禁止的到期日期，或为空没有定义的结束日期。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="./BanEntry.htm#getReason()">getReason</a></strong>()</code>
+<div class="block"><font><font>得到这个禁令的原因。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="./BanEntry.htm#getSource()">getSource</a></strong>()</code>
+<div class="block"><font><font>获得这项禁令的来源。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="./BanEntry.htm#getTarget()">getTarget</a></strong>()</code>
+<div class="block"><font><font>获得目标涉及。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href=".https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.htm#save()">save</a></strong>()</code>
+<div class="block"><font><font>保存禁止条目，覆盖禁止列表中的任何以前的数据。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="./BanEntry.htm#setCreated(java.util.Date)">setCreated</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;created)</code>
+<div class="block"><font><font>设置创建此禁止条目的日期。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="./BanEntry.htm#setExpiration(java.util.Date)">setExpiration</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expiration)</code>
+<div class="block"><font><font>设置此禁令到期的日期。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="./BanEntry.htm#setReason(java.lang.String)">setReason</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;reason)</code>
+<div class="block"><font><font>设置此禁止的原因。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="./BanEntry.htm#setSource(java.lang.String)">setSource</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;source)</code>
+<div class="block"><font><font>设置此禁令的来源。</font></font></div>
+</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+ 
+</a>
+<h3><font><font>方法详细信息</font></font></h3>
+<a name="getTarget()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getTarget</font></font></h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>串</font></font></a><font><font> &nbsp;了getTarget（）</font></font></pre>
+<div class="block"><font><font>获得目标涉及。</font><font>这可以是IP或播放器名称的形式。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>目标名称或IP地址</font></font></dd></dl>
+</li>
+</ul>
+<a name="getCreated()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getCreated</font></font></h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="类或接口"><font><font>日期</font></font></a><font><font> &nbsp;getCreated（）</font></font></pre>
+<div class="block"><font><font>获取此禁止条目创建的日期。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>创建日期</font></font></dd></dl>
+</li>
+</ul>
+<a name="setCreated(java.util.Date)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setCreated</font></font></h4>
+<pre><font><font>无效setCreated（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="类或接口"><font><font>日期</font></font></a><font><font> &nbsp;创建）</font></font></pre>
+<div class="block"><font><font>设置创建此禁止条目的日期。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>created</code><font><font>  - 新创建的日期，不能为null</font></font></dd><dt><span class="strong"><font><font>也可以看看：</font></font></span></dt><dd><a href="./BanEntry.htm#save()"><code>saving changes</code></a></dd></dl>
+</li>
+</ul>
+<a name="getSource()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getSource</font></font></h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;的getSource（）</font></font></pre>
+<div class="block"><font><font>获得这项禁令的来源。
+</font></font><p><font><font>
+注意：源被认为是任何字符串，虽然这通常是一个播放器名称。</font></font></p></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>禁令的根源</font></font></dd></dl>
+</li>
+</ul>
+<a name="setSource(java.lang.String)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setSource</font></font></h4>
+<pre><font><font>无效的SetSource（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;源）</font></font></pre>
+<div class="block"><font><font>设置此禁令的来源。
+</font></font><p><font><font>
+注意：源被认为是任何字符串，虽然这通常是一个播放器名称。</font></font></p></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>source</code><font><font>  - 空值为空字符串的新来源</font></font></dd><dt><span class="strong"><font><font>也可以看看：</font></font></span></dt><dd><a href="./BanEntry.htm#save()"><code>saving changes</code></a></dd></dl>
+</li>
+</ul>
+<a name="getExpiration()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getExpiration</font></font></h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="类或接口"><font><font>日期</font></font></a><font><font> &nbsp;getExpiration（）</font></font></pre>
+<div class="block"><font><font>获取此禁止的到期日期，或为空没有定义的结束日期。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>过期日期</font></font></dd></dl>
+</li>
+</ul>
+<a name="setExpiration(java.util.Date)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setExpiration</font></font></h4>
+<pre><font><font>无效setExpiration（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="类或接口"><font><font>日期</font></font></a><font><font> &nbsp;过期）</font></font></pre>
+<div class="block"><font><font>设置此禁令到期的日期。</font><font>空值被认为是“无限”禁令。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>expiration</code><font><font>  - 新的到期日期，或null表示永久性</font></font></dd><dt><span class="strong"><font><font>也可以看看：</font></font></span></dt><dd><a href="./BanEntry.htm#save()"><code>saving changes</code></a></dd></dl>
+</li>
+</ul>
+<a name="getReason()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getReason</font></font></h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>串</font></font></a><font><font> &nbsp;getReason（）</font></font></pre>
+<div class="block"><font><font>得到这个禁令的原因。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>禁止原因，或null如果没有设置</font></font></dd></dl>
+</li>
+</ul>
+<a name="setReason(java.lang.String)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>setReason</font></font></h4>
+<pre><font><font>无效setReason（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;的原因）</font></font></pre>
+<div class="block"><font><font>设置此禁止的原因。</font><font>原因不能为空。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>reason</code><font><font>  - 新的原因，null值假设实现默认</font></font></dd><dt><span class="strong"><font><font>也可以看看：</font></font></span></dt><dd><a href="./BanEntry.htm#save()"><code>saving changes</code></a></dd></dl>
+</li>
+</ul>
+<a name="save()">
+ 
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4><font><font>保存</font></font></h4>
+<pre><font><font>void save（）</font></font></pre>
+<div class="block"><font><font>保存禁止条目，覆盖禁止列表中的任何以前的数据。
+</font></font><p><font><font>
+保存禁止玩家的禁止条目将导致玩家被再次禁止。</font></font></p></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+ 
+ 
+<div class="bottomNav"><a name="navbar_bottom">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html#skip-navbar_bottom" title="跳过导航链接"></a><a name="navbar_bottom_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="../../../overview-summary.htm"><font><font>概述</font></font></a></li>
+<li><a href="../../org.bukkit.htm"><font><font>程序包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="./BanEntry.htm"><font><font>使用</font></font></a></li>
+<li><a href="../../../package-tree.htm"><font><font>树</font></font></a></li>
+<li><a href="../../../deprecated-list.htm"><font><font>已过时</font></font></a></li>
+<li><a href="../../../index-all.htm"><font><font>索引</font></font></a></li>
+<li><a href="h../../../help-doc.htm"><font><font>帮助</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="./Art.htm" title="枚举在org.bukkit"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="./BanList.htm" title="接口在org.bukkit"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="./BanEntry.htm" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="./BanEntry.htm" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom" style="display: block;">
+<li><a href="../../..//allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><font><font>嵌套|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="./BanEntry.htm#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="./BanEntry.htm#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+ 
+</a></div>
+ 
+<p class="legalCopy"><small><font><font>版权所有©2017.保留所有权利。</font></font></small></p><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./allclasses-frame_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

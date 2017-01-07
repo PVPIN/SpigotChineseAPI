@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0064)https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html -->
+<html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+
+<title>BanList（Spigot-API 1.11.2-R0.1-SNAPSHOT API）</title>
+<meta name="date" content="2017-01-05">
+<link rel="stylesheet" type="text/css" href="./BanList_files/stylesheet.css" title="样式">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./BanList_files/translateelement.css"></head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BanList (Spigot-API 1.11.2-R0.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+&lt;div&gt;JavaScript is disabled on your browser.&lt;/div&gt;
+</noscript>
+ 
+<div class="topNav"><a name="navbar_top">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#skip-navbar_top" title="跳过导航链接"></a><a name="navbar_top_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="../../../overview-summary.htm"><font><font>概览</font></font></a></li>
+<li><a href="../org.bukkit.htm"><font><font>程序包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="../../package-use.htm"><font><font>使用</font></font></a></li>
+<li><a href="../../package-tree.htm"><font><font>树</font></font></a></li>
+<li><a href="../../deprecated-list.htm"><font><font>已过时</font></font></a></li>
+<li><a href="../../index-all.htm"><font><font>索引</font></font></a></li>
+<li><a href=../../help-doc.htm"><font><font>帮助</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.Type.html" title="枚举在org.bukkit"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index.html?org/bukkit/BanList.html" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#nested_class_summary"><font><font>嵌套</font></font></a><font><font> &nbsp;|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+ 
+</a></div>
+ 
+ 
+<div class="header">
+<div class="subTitle"><font><font>org.bukkit</font></font></div>
+<h2 title="接口BanList" class="title"><font><font>接口BanList</font></font></h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre><font><font>公共接口</font></font><span class="strong"><font><font>BanList</font></font></span></pre>
+<div class="block"><font><font>禁令清单，其中包含一些禁令</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.Type.html" title="枚举在org.bukkit"><code>BanList.Type</code></a><font><font>。</font></font></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+ 
+</a>
+<h3><font><font>嵌套类摘要</font></font></h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span><font><font>嵌套类</font></font></span><span class="tabEnd">&nbsp;</span></caption>
+<tbody><tr>
+<th class="colFirst" scope="col"><font><font>修饰符和类型</font></font></th>
+<th class="colLast" scope="col"><font><font>接口和说明</font></font></th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.Type.html" title="enum in org.bukkit">BanList.Type</a></strong></code>
+<div class="block"><font><font>表示一个班型，一个</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html" title="接口在org.bukkit"><code>BanList</code></a><font><font>可以跟踪。</font></font></div>
+</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+ 
+</a>
+<h3><font><font>方法摘要</font></font></h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span><font><font>方法</font></font></span><span class="tabEnd">&nbsp;</span></caption>
+<tbody><tr>
+<th class="colFirst" scope="col"><font><font>修饰符和类型</font></font></th>
+<th class="colLast" scope="col"><font><font>方法和说明</font></font></th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="interface in org.bukkit">BanEntry</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#addBan(java.lang.String,%20java.lang.String,%20java.util.Date,%20java.lang.String)">addBan</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;target,
+<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;reason,
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;expires,
+<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;source)</code>
+<div class="block"><font><font>添加禁止到此列表。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="interface in org.bukkit">BanEntry</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#getBanEntries()">getBanEntries</a></strong>()</code>
+<div class="block"><font><font>获取包含每一套</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>在列表中。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="interface in org.bukkit">BanEntry</a></code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#getBanEntry(java.lang.String)">getBanEntry</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;target)</code>
+<div class="block"><font><font>获取</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>由目标。</font></font></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#isBanned(java.lang.String)">isBanned</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;target)</code>
+<div class="block"><font><font>获取如果一个</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>目标存在，指示活性禁止状态。</font></font></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#pardon(java.lang.String)">pardon</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;target)</code>
+<div class="block"><font><font>从此列表中删除指定的目标，因此指示“未禁止”状态。</font></font></div>
+</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+ 
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+ 
+</a>
+<h3><font><font>方法详细信息</font></font></h3>
+<a name="getBanEntry(java.lang.String)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getBanEntry</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><font><font>BanEntry</font></font></a><font><font> &nbsp;getBanEntry（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;对象）</font></font></pre>
+<div class="block"><font><font>获取</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>由目标。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>target</code><font><font>  - 要搜索的条目参数</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>相应的条目，如果没有找到则为null</font></font></dd></dl>
+</li>
+</ul>
+<a name="addBan(java.lang.String, java.lang.String, java.util.Date, java.lang.String)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>addBan</font></font></h4>
+<pre><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><font><font>BanEntry</font></font></a><font><font> &nbsp;addBan（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;目标
+               </font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;原因，
+               </font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="类或接口"><font><font>日期</font></font></a><font><font> &nbsp;到期后，
+               </font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;源）</font></font></pre>
+<div class="block"><font><font>添加禁止到此列表。</font><font>如果存在先前的禁止，则这将更新先前的条目。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>target</code><font><font>  - 禁令的目标</font></font></dd><dd><code>reason</code><font><font>  - 禁止的原因，null表示实现默认</font></font></dd><dd><code>expires</code><font><font>  - 禁令的到期日期（取消停止），或null表示永远</font></font></dd><dd><code>source</code><font><font>  - 禁止来源，null表示实施默认</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>新创建的禁令的条目或（已更新的）先前禁止的条目</font></font></dd></dl>
+</li>
+</ul>
+<a name="getBanEntries()">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>getBanEntries</font></font></h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="类或接口"><font><font>设置</font></font></a><font><font> &lt; </font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><font><font>BanEntry</font></font></a><font><font> &gt; getBanEntries（）</font></font></pre>
+<div class="block"><font><font>获取包含每一套</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>在列表中。</font></font></div>
+<dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>包含由此列表跟踪的每个条目的不可变集合</font></font></dd></dl>
+</li>
+</ul>
+<a name="isBanned(java.lang.String)">
+ 
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4><font><font>isBanned</font></font></h4>
+<pre><font><font>布尔isBanned（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;对象）</font></font></pre>
+<div class="block"><font><font>获取如果一个</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>目标存在，指示活性禁止状态。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>target</code><font><font>  - 找到的目标</font></font></dd>
+<dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>真若</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>存在名称，表明积极的禁令状态，否则为false</font></font></dd></dl>
+</li>
+</ul>
+<a name="pardon(java.lang.String)">
+ 
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4><font><font>赦免</font></font></h4>
+<pre><font><font>无效赦免（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;对象）</font></font></pre>
+<div class="block"><font><font>从此列表中删除指定的目标，因此指示“未禁止”状态。</font></font></div>
+<dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>target</code><font><font>  - 要从此列表中删除的目标</font></font></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+ 
+ 
+<div class="bottomNav"><a name="navbar_bottom">
+ 
+</a><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#skip-navbar_bottom" title="跳过导航链接"></a><a name="navbar_bottom_firstrow">
+ 
+</a>
+<ul class="navList" title="导航">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/overview-summary.html"><font><font>概述</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/package-summary.html"><font><font>包</font></font></a></li>
+<li class="navBarCell1Rev"><font><font>类</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/class-use/BanList.html"><font><font>使用</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/package-tree.html"><font><font>树</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/deprecated-list.html"><font><font>已弃用</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index-all.html"><font><font>指数</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/help-doc.html"><font><font>帮帮我</font></font></a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><span class="strong"><font><font>上一个类</font></font></span></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.Type.html" title="枚举在org.bukkit"><span class="strong"><font><font>下一课</font></font></span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/index.html?org/bukkit/BanList.html" target="_top"><font><font>框架</font></font></a></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html" target="_top"><font><font>无框架</font></font></a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom" style="display: block;">
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/allclasses-noframe.html"><font><font>所有类</font></font></a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li><font><font>概要：&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#nested_class_summary"><font><font>嵌套</font></font></a><font><font> &nbsp;|&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#method_summary"><font><font>方法</font></font></a></li>
+</ul>
+<ul class="subNavList">
+<li><font><font>详情：&nbsp;</font></font></li>
+<li><font><font>字段|&nbsp;</font></font></li>
+<li><font><font>Constr |&nbsp;</font></font></li>
+<li><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanList.html#method_detail"><font><font>方法</font></font></a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+ 
+</a></div>
+ 
+<p class="legalCopy"><small><font><font>版权所有©2017.保留所有权利。</font></font></small></p><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./BanList_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
