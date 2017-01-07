@@ -183,7 +183,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4><font><font>getBanEntry</font></font></h4>
-<pre><a href="./BanEntry.htm" title="接口在org.bukkit"><font><font>BanEntry</font></font></a><font><font> &nbsp;getBanEntry（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;对象）</font></font></pre>
+<pre><a href="./BanEntry.htm" title="接口在org.bukkit"><font><font>BanEntry</font></font></a><font><font> &nbsp;getBanEntry（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>String</font></font></a><font><font> &nbsp;target）</font></font></pre>
 <div class="block"><font><font>获取</font></font><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/BanEntry.html" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>由目标。</font></font></div>
 <dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>target</code><font><font>  - 要搜索的条目参数</font></font></dd>
 <dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>相应的条目，如果没有找到则为null</font></font></dd></dl>
@@ -210,7 +210,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4><font><font>getBanEntries</font></font></h4>
-<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="类或接口"><font><font>设置</font></font></a><font><font> &lt; </font></font><a href="./BanEntry.htm" title="接口在org.bukkit"><font><font>BanEntry</font></font></a><font><font> &gt; getBanEntries（）</font></font></pre>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="类或接口"><font><font>set</font></font></a><font><font> &lt; </font></font><a href="./BanEntry.htm" title="接口在org.bukkit"><font><font>BanEntry</font></font></a><font><font> &gt; getBanEntries（）</font></font></pre>
 <div class="block"><font><font>获取包含每一套</font></font><a href="./BanEntry.htm" title="接口在org.bukkit"><code>BanEntry</code></a><font><font>在列表中。</font></font></div>
 <dl><dt><span class="strong"><font><font>返回：</font></font></span></dt><dd><font><font>包含由此列表跟踪的每个条目的不可变集合</font></font></dd></dl>
 </li>
@@ -232,8 +232,8 @@
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4><font><font>赦免</font></font></h4>
-<pre><font><font>无效赦免（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>字符串</font></font></a><font><font> &nbsp;对象）</font></font></pre>
+<h4><font><font>pardon</font></font></h4>
+<pre><font><font>void pardon（</font></font><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="类或接口"><font><font>String</font></font></a><font><font> &nbsp;对象）</font></font></pre>
 <div class="block"><font><font>从此列表中删除指定的目标，因此指示“未禁止”状态。</font></font></div>
 <dl><dt><span class="strong"><font><font>参数：</font></font></span></dt><dd><code>target</code><font><font>  - 要从此列表中删除的目标</font></font></dd></dl>
 </li>
